@@ -21,8 +21,8 @@ public class UserController {
     @ApiOperation(value = "获取用户详情", produces = MediaType.APPLICATION_JSON_VALUE)
 //    @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path")
     @RequestMapping(value = "/getUser", method = RequestMethod.GET)
-    public Object getUser(HttpServletRequest request, @RequestParam(required = false) Long userId) {
-        User user= restTemplate.getForObject("http://eureka-client/user/getUserById", User.class);
+    public Object getUser(HttpServletRequest request, @RequestParam Long userId) {
+        User user= restTemplate.getForObject("http://eureka-client/user/getUserById?userId="+userId, User.class);
         return user;
     }
 
