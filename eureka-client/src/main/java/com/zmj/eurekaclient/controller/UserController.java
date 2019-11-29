@@ -16,8 +16,8 @@ public class UserController {
 
     @ApiOperation(value = "获取用户详情", produces = MediaType.APPLICATION_JSON_VALUE)
 //    @ApiImplicitParam(name = "id", value = "用户id", required = true, dataType = "Long", paramType = "path")
-    @RequestMapping(value = "/getUserById", method = RequestMethod.GET)
-    public Object getUserById(HttpServletRequest request,@RequestParam Long userId) {
+    @RequestMapping(value = "/getUserById/{userId}", method = RequestMethod.GET)
+    public Object getUserById(HttpServletRequest request,@PathVariable Long userId) {
         return userService.getUserById(userId);
     }
 
