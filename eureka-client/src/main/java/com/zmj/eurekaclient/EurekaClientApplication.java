@@ -8,6 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableEurekaClient
+//@EnableFeignClients
 @SpringBootApplication
 @EnableSwagger2
 @MapperScan("com.zmj.eurekaclient.dao")
