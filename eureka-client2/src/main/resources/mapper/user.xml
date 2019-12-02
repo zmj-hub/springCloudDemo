@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace = "com.zmj.eurekaclient2.dao.UserDao">
+	
+	<resultMap id = "user_map" type = "com.zmj.eurekaclient2.domin.User">
+		<id column = "user_id" property = "userId"/>
+		<result column = "user_name" property = "userName"/>
+		<result column = "user_password" property = "userPassword"/>
+	</resultMap>
+	
+	<select id = "getUserById" resultMap="user_map">
+		select *
+		from  "user"
+		where user_id = #{userId}
+	</select>
+</mapper>
