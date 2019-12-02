@@ -1,4 +1,4 @@
-package com.zmj.eurekaclient.config;
+package com.zmj.eurekaclient2.config;
 
 
 import io.swagger.annotations.ApiOperation;

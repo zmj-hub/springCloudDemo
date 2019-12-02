@@ -1,4 +1,4 @@
-package com.zmj.eurekaclient.domin;
+package com.zmj.eurekaclient2.domin;
 
 public class User {
     private Long userId;

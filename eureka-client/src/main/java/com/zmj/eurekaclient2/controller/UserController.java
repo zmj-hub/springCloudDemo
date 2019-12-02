@@ -1,6 +1,6 @@
-package com.zmj.eurekaclient.controller;
+package com.zmj.eurekaclient2.controller;
 
-import com.zmj.eurekaclient.service.UserService;
+import com.zmj.eurekaclient2.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

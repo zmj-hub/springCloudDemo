@@ -1,7 +1,7 @@
-package com.zmj.eurekaclient.service;
+package com.zmj.eurekaclient2.service;
 
-import com.zmj.eurekaclient.dao.UserDao;
-import com.zmj.eurekaclient.domin.User;
+import com.zmj.eurekaclient2.dao.UserDao;
+import com.zmj.eurekaclient2.domin.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
